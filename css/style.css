@@ -2,3 +2,74 @@ body {
 	background: url(../img/12_col.gif) center top repeat-y;
 	background-size: 90%;
 }
+
+.container {
+	display: grid;
+  align-items: column;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 100px;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "header header header header"
+    "box1 box2 box3"
+    "main main main sidebar"
+    "footer footer footer footer";
+}
+
+header,
+.box1,
+.box2,
+.box3,
+main,
+aside,
+footer {
+	border: 0.5px solid rgb(44, 44, 44);
+}
+
+.header {
+  grid-area: header;
+}
+
+.subheader {
+
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.footer .footer_section1 {
+  grid-area: footer_section;
+}
+
+.footer .footer_section2 {
+	grid-area: footer_section;
+}
+
+.footer .footer_section3 {
+	grid-area: footer_section;
+}
+
+.footer .footer_section4 {
+	grid-area: footer_section;
+}
