@@ -12,7 +12,7 @@ body {
     margin: 20px auto;
     grid-gap: 25px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 150px);
+    grid-template-rows: repeat(5,minmax(150px, auto));
     grid-template-areas: 
     "header header header header"
     ".item_1 .item_2 .item_2 item_3"
