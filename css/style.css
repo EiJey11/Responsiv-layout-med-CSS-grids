@@ -201,7 +201,7 @@ body {
 @media only screen and (max-width: 768px) {
 
   #container {
-    grid-template-rows: repeat(10, 150px);
+    grid-template-rows: repeat(11, 150px);
   }
 
   .item_1 {
@@ -222,10 +222,6 @@ body {
   main {
     grid-column: 1/13;
     grid-row: 5/11;
-  }
-
-  #container {
-    grid-template-rows: repeat(11, 150px);
   }
 
   aside {
